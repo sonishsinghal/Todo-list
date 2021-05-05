@@ -85,6 +85,14 @@ function App() {
           <Route exact path="/Contact">
             <Contact />
           </Route>
+          <Route exact path="/Todo-list"render={() => {
+            return(
+            <>
+              <AddTodo addTodo={addTodo} />
+              <Todos todos={todos} onDelete={onDelete} />
+            </>)
+          }}>
+          </Route>
         </Switch>
         <Footer />
       </Router>
