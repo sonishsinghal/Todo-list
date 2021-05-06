@@ -85,7 +85,7 @@ function App() {
           <Route exact path="/Contact">
             <Contact />
           </Route>
-          <Route exact path="/Todo-list"render={() => {
+          <Route exact path="/Todo-list" render={() => {
             return(
             <>
               <AddTodo addTodo={addTodo} />
